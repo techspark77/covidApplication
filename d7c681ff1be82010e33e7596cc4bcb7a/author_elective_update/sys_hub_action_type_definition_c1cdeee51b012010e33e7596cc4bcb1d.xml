@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>package_private</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This will parse the status attribute from the REST response </description>
+        <ih_action>false</ih_action>
+        <internal_name>parsing_action</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Parsing Action</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 00:53:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c1cdeee51b012010e33e7596cc4bcb1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Parsing Action</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_c1cdeee51b012010e33e7596cc4bcb1d</sys_update_name>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 00:53:38</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=c1cdeee51b012010e33e7596cc4bcb1d"/>
+    <sys_variable_value action="DELETE" query="document_key=c1cdeee51b012010e33e7596cc4bcb1d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</application>
+        <file_path/>
+        <instance_id>27be7cb1db2f53401ddcf22ebf961973</instance_id>
+        <instance_name>dev67408</instance_name>
+        <name>sys_hub_action_type_definition_c1cdeee51b012010e33e7596cc4bcb1d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>package_private</access><acls/><action_template/><active>true</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description>This will parse the status attribute from the REST response </description><ih_action>false</ih_action><internal_name>parsing_action</internal_name><label_cache/><latest_snapshot/><master_snapshot/><name>Parsing Action</name><natlang/><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 00:53:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c1cdeee51b012010e33e7596cc4bcb1d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Parsing Action</sys_name><sys_overrides/><sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package><sys_policy/><sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope><sys_update_name>sys_hub_action_type_definition_c1cdeee51b012010e33e7596cc4bcb1d</sys_update_name><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 00:53:38</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=c1cdeee51b012010e33e7596cc4bcb1d"/><sys_variable_value action="delete_multiple" query="document_key=c1cdeee51b012010e33e7596cc4bcb1d"/></record_update>]]></payload>
+        <payload_hash>-442965936</payload_hash>
+        <record_name>Parsing Action</record_name>
+        <reverted_from/>
+        <source>5fc681ff1be82010e33e7596cc4bcb7c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 00:53:38</sys_created_on>
+        <sys_id>05cdeee51b012010e33e7596cc4bcb22</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1765996b70e0000001</sys_recorded_at>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 00:53:38</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>4dcdeee5b7012010e68f742ded5ca321</update_guid>
+        <update_guid_history>4dcdeee5b7012010e68f742ded5ca321:-442965936</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-14 19:33:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>8e82b6debd294c719382f695d2a8d2a9</sys_id>
+        <sys_metadata>c1cdeee51b012010e33e7596cc4bcb1d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Parsing Action</sys_name>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_scope_delete display_value="">1ee6a7dd96c341ce990215f6e2b71b24</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_c1cdeee51b012010e33e7596cc4bcb1d</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_c1cdeee51b012010e33e7596cc4bcb1d">05cdeee51b012010e33e7596cc4bcb22</sys_update_version>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-14 19:33:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

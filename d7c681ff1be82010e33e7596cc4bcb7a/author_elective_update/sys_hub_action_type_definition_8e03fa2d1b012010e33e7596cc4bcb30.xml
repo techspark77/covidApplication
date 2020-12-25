@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>package_private</access>
+        <acls/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>abcd</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>abcd</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:16:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8e03fa2d1b012010e33e7596cc4bcb30</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>abcd</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_8e03fa2d1b012010e33e7596cc4bcb30</sys_update_name>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:22:40</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=8e03fa2d1b012010e33e7596cc4bcb30"/>
+    <sys_variable_value action="DELETE" query="document_key=8e03fa2d1b012010e33e7596cc4bcb30"/>
+    <sys_hub_step_instance action="DELETE" query="action=8e03fa2d1b012010e33e7596cc4bcb30^sys_idNOT INa934fe6d1b012010e33e7596cc4bcb81"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="abcd">8e03fa2d1b012010e33e7596cc4bcb30</action>
+        <cid>774dbd18-4d0c-4df2-b1cb-e4089ae19a99</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>a934fe6d1b012010e33e7596cc4bcb81</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:22:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=a934fe6d1b012010e33e7596cc4bcb81"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>2934fe6d1b012010e33e7596cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>https://covid1910.p.rapidapi.com/data/${status}/country/${country}</value>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>2d34fe6d1b012010e33e7596cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"useQueryString","value":"true"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"x-rapidapi-host","value":"covid1910.p.rapidapi.com\t"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"x-rapidapi-key","value":"7ed802d048msh4e7199b29598b00p1a36e0jsnd5506502e177"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>6534fe6d1b012010e33e7596cc4bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"country","value":"us"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"status","value":"death"}]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:22:40</sys_created_on>
+        <sys_id>9664f2ad1b012010e33e7596cc4bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:22:40</sys_updated_on>
+        <value>https://covid1910.p.rapidapi.com/</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>a134fe6d1b012010e33e7596cc4bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:22:40</sys_created_on>
+        <sys_id>d264f2ad1b012010e33e7596cc4bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:22:40</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>ed34fe6d1b012010e33e7596cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_hub_step_instance action="DELETE" query="action=8e03fa2d1b012010e33e7596cc4bcb30^sys_idNOT INa934fe6d1b012010e33e7596cc4bcb81"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="abcd">8e03fa2d1b012010e33e7596cc4bcb30</action>
+        <cid>774dbd18-4d0c-4df2-b1cb-e4089ae19a99</cid>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>a934fe6d1b012010e33e7596cc4bcb81</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:22:40</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=a934fe6d1b012010e33e7596cc4bcb81"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>2934fe6d1b012010e33e7596cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>https://covid1910.p.rapidapi.com/data/${status}/country/${country}</value>
+        <variable display_value="">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>2d34fe6d1b012010e33e7596cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"useQueryString","value":"true"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"x-rapidapi-host","value":"covid1910.p.rapidapi.com\t"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"x-rapidapi-key","value":"7ed802d048msh4e7199b29598b00p1a36e0jsnd5506502e177"}]}</value>
+        <variable display_value="">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>6534fe6d1b012010e33e7596cc4bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"country","value":"us"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"status","value":"death"}]}</value>
+        <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:22:40</sys_created_on>
+        <sys_id>9664f2ad1b012010e33e7596cc4bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:22:40</sys_updated_on>
+        <value>https://covid1910.p.rapidapi.com/</value>
+        <variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>a134fe6d1b012010e33e7596cc4bcb9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:22:40</sys_created_on>
+        <sys_id>d264f2ad1b012010e33e7596cc4bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:22:40</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:21:48</sys_created_on>
+        <sys_id>ed34fe6d1b012010e33e7596cc4bcb9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:21:48</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</application>
+        <file_path/>
+        <instance_id>27be7cb1db2f53401ddcf22ebf961973</instance_id>
+        <instance_name>dev67408</instance_name>
+        <name>sys_hub_action_type_definition_8e03fa2d1b012010e33e7596cc4bcb30</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>package_private</access><acls/><action_template/><active>true</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><copied_from/><copied_from_name/><description/><ih_action>false</ih_action><internal_name>abcd</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><name>abcd</name><natlang/><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:16:38</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8e03fa2d1b012010e33e7596cc4bcb30</sys_id><sys_mod_count>3</sys_mod_count><sys_name>abcd</sys_name><sys_overrides/><sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package><sys_policy/><sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope><sys_update_name>sys_hub_action_type_definition_8e03fa2d1b012010e33e7596cc4bcb30</sys_update_name><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:22:40</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=8e03fa2d1b012010e33e7596cc4bcb30"/><sys_variable_value action="delete_multiple" query="document_key=8e03fa2d1b012010e33e7596cc4bcb30"/><sys_hub_step_instance action="delete_multiple" query="action=8e03fa2d1b012010e33e7596cc4bcb30^sys_idNOT INa934fe6d1b012010e33e7596cc4bcb81"/><sys_hub_step_instance action="INSERT_OR_UPDATE"><action display_value="abcd">8e03fa2d1b012010e33e7596cc4bcb30</action><cid>774dbd18-4d0c-4df2-b1cb-e4089ae19a99</cid><extended_inputs/><extended_outputs/><icon/><inputs/><label>REST step</label><order>1</order><outputs/><section/><step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>a934fe6d1b012010e33e7596cc4bcb81</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:22:40</sys_updated_on></sys_hub_step_instance><sys_variable_value action="delete_multiple" query="document_key=a934fe6d1b012010e33e7596cc4bcb81"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>20</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>2934fe6d1b012010e33e7596cc4bcb9c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>https://covid1910.p.rapidapi.com/data/${status}/country/${country}</value><variable display_value="">3d090af03b23320057a4a2e334efc455</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>30</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>2d34fe6d1b012010e33e7596cc4bcb9c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"useQueryString","value":"true"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"x-rapidapi-host","value":"covid1910.p.rapidapi.com\t"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"x-rapidapi-key","value":"7ed802d048msh4e7199b29598b00p1a36e0jsnd5506502e177"}]}</value><variable display_value="">371837f1c71003007b237f48cb9763b0</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>25</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>6534fe6d1b012010e33e7596cc4bcb9d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"country","value":"us"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"status","value":"death"}]}</value><variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>15</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:22:40</sys_created_on><sys_id>9664f2ad1b012010e33e7596cc4bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:22:40</sys_updated_on><value>https://covid1910.p.rapidapi.com/</value><variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>12</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>a134fe6d1b012010e33e7596cc4bcb9d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>35aa573fd7802200bdbaee5b5e610375</value><variable display_value="">f11ebf865f101300a09a2abd7f466652</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>5</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:22:40</sys_created_on><sys_id>d264f2ad1b012010e33e7596cc4bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:22:40</sys_updated_on><value>define_connection_inline</value><variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>13</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>ed34fe6d1b012010e33e7596cc4bcb9c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>18409d8007482000dada43c0d1021e8f</value><variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable></sys_variable_value><sys_hub_step_instance action="delete_multiple" query="action=8e03fa2d1b012010e33e7596cc4bcb30^sys_idNOT INa934fe6d1b012010e33e7596cc4bcb81"/><sys_hub_step_instance action="INSERT_OR_UPDATE"><action display_value="abcd">8e03fa2d1b012010e33e7596cc4bcb30</action><cid>774dbd18-4d0c-4df2-b1cb-e4089ae19a99</cid><extended_inputs/><extended_outputs/><icon/><inputs/><label>REST step</label><order>1</order><outputs/><section/><step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>a934fe6d1b012010e33e7596cc4bcb81</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:22:40</sys_updated_on></sys_hub_step_instance><sys_variable_value action="delete_multiple" query="document_key=a934fe6d1b012010e33e7596cc4bcb81"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>20</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>2934fe6d1b012010e33e7596cc4bcb9c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>https://covid1910.p.rapidapi.com/data/${status}/country/${country}</value><variable display_value="">3d090af03b23320057a4a2e334efc455</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>30</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>2d34fe6d1b012010e33e7596cc4bcb9c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"useQueryString","value":"true"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"x-rapidapi-host","value":"covid1910.p.rapidapi.com\t"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"x-rapidapi-key","value":"7ed802d048msh4e7199b29598b00p1a36e0jsnd5506502e177"}]}</value><variable display_value="">371837f1c71003007b237f48cb9763b0</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>25</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>6534fe6d1b012010e33e7596cc4bcb9d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"country","value":"us"},{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"status","value":"death"}]}</value><variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>15</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:22:40</sys_created_on><sys_id>9664f2ad1b012010e33e7596cc4bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:22:40</sys_updated_on><value>https://covid1910.p.rapidapi.com/</value><variable display_value="">a67a8ef03b23320057a4a2e334efc472</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>12</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>a134fe6d1b012010e33e7596cc4bcb9d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>35aa573fd7802200bdbaee5b5e610375</value><variable display_value="">f11ebf865f101300a09a2abd7f466652</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>5</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:22:40</sys_created_on><sys_id>d264f2ad1b012010e33e7596cc4bcb5d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:22:40</sys_updated_on><value>define_connection_inline</value><variable display_value="">91e207d03b50030057a4a2e334efc4a0</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_hub_step_instance</document><document_key>a934fe6d1b012010e33e7596cc4bcb81</document_key><order>13</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>niamul.arifin</sys_created_by><sys_created_on>2020-12-13 01:21:48</sys_created_on><sys_id>ed34fe6d1b012010e33e7596cc4bcb9c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>niamul.arifin</sys_updated_by><sys_updated_on>2020-12-13 01:21:48</sys_updated_on><value>18409d8007482000dada43c0d1021e8f</value><variable display_value="">c30a451d2f201300a09a839fb18c95b4</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>2021723382</payload_hash>
+        <record_name>abcd</record_name>
+        <reverted_from/>
+        <source>5fc681ff1be82010e33e7596cc4bcb7c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-13 01:22:40</sys_created_on>
+        <sys_id>a264f2ad1b012010e33e7596cc4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17659b14dbe0000001</sys_recorded_at>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-13 01:22:40</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>2e64f2adc201201004b7ef60dd7d7277</update_guid>
+        <update_guid_history>2e64f2adc201201004b7ef60dd7d7277:2021723382,b934fe6da601201075c3074f216874cf:-516186542,ca03fa2d37012010629843635a926f33:1755604011</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-14 19:33:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>5b9c28f715614b0ab9da3b4177928f49</sys_id>
+        <sys_metadata>8e03fa2d1b012010e33e7596cc4bcb30</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>abcd</sys_name>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_scope_delete display_value="">1ee6a7dd96c341ce990215f6e2b71b24</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_8e03fa2d1b012010e33e7596cc4bcb30</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_8e03fa2d1b012010e33e7596cc4bcb30">a264f2ad1b012010e33e7596cc4bcb78</sys_update_version>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-14 19:33:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

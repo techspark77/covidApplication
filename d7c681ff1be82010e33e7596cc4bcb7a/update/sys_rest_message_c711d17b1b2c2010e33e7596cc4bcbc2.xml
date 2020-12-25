@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>no_authentication</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description>This API is from RapidAPI marketplace. This is an outbound call to the target to retrieve information.</description>
+        <name>Covid19 API</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>https://covid1910.p.rapidapi.com/</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-11-24 21:27:20</sys_created_on>
+        <sys_id>c711d17b1b2c2010e33e7596cc4bcbc2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Covid19 API</sys_name>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_update_name>sys_rest_message_c711d17b1b2c2010e33e7596cc4bcbc2</sys_update_name>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-11-24 21:42:22</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

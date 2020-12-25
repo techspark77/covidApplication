@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="country" label="Country" language="en" table="x_70281_covid_trac_data_points">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>country</element>
+            <help/>
+            <hint/>
+            <label>Country</label>
+            <language>en</language>
+            <name>x_70281_covid_trac_data_points</name>
+            <plural>Countries</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-12-22 14:29:24</sys_created_on>
+            <sys_id>a6ceb3281b112010e33e7596cc4bcb46</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Country</sys_name>
+            <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+            <sys_update_name>sys_documentation_x_70281_covid_trac_data_points_country_en</sys_update_name>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-12-22 14:29:24</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

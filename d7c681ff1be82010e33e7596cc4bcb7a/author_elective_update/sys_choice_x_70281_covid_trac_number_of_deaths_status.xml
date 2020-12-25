@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="status" table="x_70281_covid_trac_number_of_deaths" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <name>x_70281_covid_trac_number_of_deaths</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 20:50:17</sys_created_on>
+            <sys_id>3c7949731b2c2010e33e7596cc4bcb7f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>status</sys_name>
+            <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+            <sys_update_name>sys_choice_x_70281_covid_trac_number_of_deaths_status</sys_update_name>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 20:50:17</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>confirmed</label>
+            <language>en</language>
+            <name>x_70281_covid_trac_number_of_deaths</name>
+            <sequence>1</sequence>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 20:50:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1a5985b31b2c2010e33e7596cc4bcb09</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 20:51:16</sys_updated_on>
+            <value>confirmed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>death</label>
+            <language>en</language>
+            <name>x_70281_covid_trac_number_of_deaths</name>
+            <sequence>2</sequence>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 20:50:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7189c1ff1be82010e33e7596cc4bcb7a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 20:51:38</sys_updated_on>
+            <value>death</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>recovered</label>
+            <language>en</language>
+            <name>x_70281_covid_trac_number_of_deaths</name>
+            <sequence>3</sequence>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 20:50:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f59909b31b2c2010e33e7596cc4bcbbc</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 20:51:05</sys_updated_on>
+            <value>recovered</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

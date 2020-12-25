@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="8a8a41b31b2c2010e33e7596cc4bcb2e" sys_domain="global" table="x_70281_covid_trac_number_of_deaths" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>country</element>
+            <position>0</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 21:03:09</sys_created_on>
+            <sys_id>156c81771b2c2010e33e7596cc4bcb85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 21:03:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>1</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 21:03:09</sys_created_on>
+            <sys_id>956c81771b2c2010e33e7596cc4bcb85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 21:03:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date</element>
+            <position>2</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 21:03:09</sys_created_on>
+            <sys_id>196c81771b2c2010e33e7596cc4bcb85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 21:03:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 21:03:09</sys_created_on>
+            <sys_id>996c81771b2c2010e33e7596cc4bcb85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 21:03:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_by</element>
+            <position>4</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 21:03:09</sys_created_on>
+            <sys_id>1d6c81771b2c2010e33e7596cc4bcb85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 21:03:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>5</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 21:03:09</sys_created_on>
+            <sys_id>9d6c81771b2c2010e33e7596cc4bcb85</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 21:03:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>total_number</element>
+            <position>6</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-25 16:14:07</sys_created_on>
+            <sys_id>0dd31d001bb86010e33e7596cc4bcb44</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-25 16:14:07</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>death_case</element>
+            <position>7</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-25 18:24:12</sys_created_on>
+            <sys_id>e2913d881bf86010e33e7596cc4bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-25 18:24:12</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>recovered_case</element>
+            <position>8</position>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-25 18:25:06</sys_created_on>
+            <sys_id>fbc1bd881bf86010e33e7596cc4bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_70281_covid_trac_number_of_deaths" sys_domain="global" view="Default view">8a8a41b31b2c2010e33e7596cc4bcb2e</sys_ui_section>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-25 18:25:06</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_70281_covid_trac_number_of_deaths</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>niamul.arifin</sys_created_by>
+            <sys_created_on>2020-11-24 20:55:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a8a41b31b2c2010e33e7596cc4bcb2e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_70281_covid_trac_number_of_deaths</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+            <sys_update_name>sys_ui_section_8a8a41b31b2c2010e33e7596cc4bcb2e</sys_update_name>
+            <sys_updated_by>niamul.arifin</sys_updated_by>
+            <sys_updated_on>2020-11-24 20:55:01</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

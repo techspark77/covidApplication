@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_70281_covid_trac.data_points_user" name="x_70281_covid_trac.data_points_user">de3e77e41b112010e33e7596cc4bcb87</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-22 14:26:56</sys_created_on>
+        <sys_id>5e3e77e41b112010e33e7596cc4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>de3e77e41b112010e33e7596cc4bcb87</sys_name>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_update_name>sys_embedded_help_role_5e3e77e41b112010e33e7596cc4bcb8b</sys_update_name>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-22 14:26:56</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

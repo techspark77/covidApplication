@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-paris-06-24-2020__patch1-hotfix3-09-23-2020</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>pull_data_from_rest_endpoint</internal_name>
+        <label_cache>[{"name":"76024511-d756-4f35-b68a-ae56f1328a2e.table_name","label":"3➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76024511-d756-4f35-b68a-ae56f1328a2e.record","label":"3➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8ab0f1f8-3829-42be-8317-ff1fcbded654.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"8ab0f1f8-3829-42be-8317-ff1fcbded654.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"8ab0f1f8-3829-42be-8317-ff1fcbded654.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"8ab0f1f8-3829-42be-8317-ff1fcbded654.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item","label":"2➛data_object","reference_display":"data_object","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703.variable","label":"1➛variable","reference_display":"variable","type":"array.object","base_type":"array.object","attributes":{"sourceId":"cd65f347-1e8d-4d23-8f00-fe8821df1042","child_name":"data_object","uiUniqueId":"22907170-b4c8-47b4-8b90-901d4daddc8b","uiTypeLabel":"Array.Object","co_type_name":"FD13c964652a5560105ccfa391a486916d","child_label":"data_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"41c07478-9092-4d9e-8522-55511abd4f2b","uiType":"array.object","child_type":"object","child_uiUniqueId":"316bb8b2-cab6-437e-9d5b-5b3d425f6ee7"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record.recovered","label":"2➛Data Points Record➛Recovered","reference":"","reference_display":"Recovered","type":"string","base_type":"string","parent_table_name":"x_70281_covid_trac_data_points","column_name":"recovered"},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record.death","label":"2➛Data Points Record➛Death","reference":"","reference_display":"Death","type":"string","base_type":"string","parent_table_name":"x_70281_covid_trac_data_points","column_name":"death"},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record.confirmed","label":"2➛Data Points Record➛Confirmed","reference":"","reference_display":"Confirmed","type":"string","base_type":"string","parent_table_name":"x_70281_covid_trac_data_points","column_name":"confirmed"},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record.country","label":"2➛Data Points Record➛Country","reference":"","reference_display":"Country","type":"string","base_type":"string","parent_table_name":"x_70281_covid_trac_data_points","column_name":"country"},{"name":"152c6d31-5a39-4262-86e9-f9501ce53faf.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"152c6d31-5a39-4262-86e9-f9501ce53faf.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.table_name","label":"2➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record","label":"2➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f40b87e2-fb4c-4773-9370-59a26cade653.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"f40b87e2-fb4c-4773-9370-59a26cade653.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"f40b87e2-fb4c-4773-9370-59a26cade653.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"f40b87e2-fb4c-4773-9370-59a26cade653.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result","label":"1➛Result","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"03c09d13-76fb-4924-81ca-94cb04966ed8"}},{"name":"aa7cd88c-1775-4e4a-bd90-6c4ca9ec3fc0.record","label":"2➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa7cd88c-1775-4e4a-bd90-6c4ca9ec3fc0.table_name","label":"2➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa7cd88c-1775-4e4a-bd90-6c4ca9ec3fc0.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa7cd88c-1775-4e4a-bd90-6c4ca9ec3fc0.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result.data.data_object.region.name","label":"1➛Action Output➛data➛data_object➛region➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result.data.data_object.confirmed","label":"1➛Action Output➛data➛data_object➛confirmed","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result.data.data_object.deaths","label":"1➛Action Output➛data➛data_object➛deaths","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result.data.data_object.recovered","label":"1➛Action Output➛data➛data_object➛recovered","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"579c3e6c-aefd-49f7-9798-7010defa1772.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"579c3e6c-aefd-49f7-9798-7010defa1772.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Run Once_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"test_input_hidden":"true"}},{"name":"1604098e-b146-472c-abec-1b67f25a83d4.record","label":"2➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1604098e-b146-472c-abec-1b67f25a83d4.table_name","label":"2➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1604098e-b146-472c-abec-1b67f25a83d4.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1604098e-b146-472c-abec-1b67f25a83d4.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703.result","label":"1➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"03c09d13-76fb-4924-81ca-94cb04966ed8"}},{"name":"928b5a31-5140-45fd-8244-dfc1d6f4d09c.record","label":"3➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"928b5a31-5140-45fd-8244-dfc1d6f4d09c.table_name","label":"3➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item.region.name","label":"2➛data_object➛region➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item.confirmed","label":"2➛data_object➛confirmed","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item.deaths","label":"2➛data_object➛deaths","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item.recovered","label":"2➛data_object➛recovered","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5cfdd040-b33f-42fc-9388-68d8d421af4b.record","label":"3➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5cfdd040-b33f-42fc-9388-68d8d421af4b.table_name","label":"3➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5cfdd040-b33f-42fc-9388-68d8d421af4b.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5cfdd040-b33f-42fc-9388-68d8d421af4b.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot>bf6424ed1b156010e33e7596cc4bcb8f</latest_snapshot>
+        <master_snapshot>bf6424ed1b156010e33e7596cc4bcb8f</master_snapshot>
+        <name>Pull Data from REST Endpoint</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>c87424ed1b156010e33e7596cc4bcbdc</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-22 19:47:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88a7c5b41b152010e33e7596cc4bcb82</sys_id>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>Pull Data from REST Endpoint</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_update_name>sys_hub_flow_88a7c5b41b152010e33e7596cc4bcb82</sys_update_name>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=88a7c5b41b152010e33e7596cc4bcb82"/>
+    <sys_variable_value action="delete_multiple" query="document_key=88a7c5b41b152010e33e7596cc4bcb82"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2020-12-25 02:25:00</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:09:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c87424ed1b156010e33e7596cc4bcbdc</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <time>1970-01-02 03:00:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:c87424ed1b156010e33e7596cc4bcbdc</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Niamul Arifin">a29ca6872f7a10105653deb6f699b6f9</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2020-12-25 02:25:00</run_start>
+        <run_time>1970-01-02 03:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('c87424ed1b156010e33e7596cc4bcbdc');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:09:21</sys_created_on>
+        <sys_id>007424ed1b156010e33e7596cc4bcbdd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope/>
+        <sys_update_name/>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">c87424ed1b156010e33e7596cc4bcbdc</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_hub_flow_component action="delete_multiple" query="flow=88a7c5b41b152010e33e7596cc4bcb82^sys_idNOT IN1c6aec651b556010e33e7596cc4bcb27,357568211b556010e33e7596cc4bcbde,ffcc28291b556010e33e7596cc4bcb56"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">106aec651b556010e33e7596cc4bcb27</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Pull Data from REST Endpoint">88a7c5b41b152010e33e7596cc4bcb82</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:35:18</sys_created_on>
+        <sys_id>1c6aec651b556010e33e7596cc4bcb27</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <ui_id>676236b8-3404-4cb2-bc77-1d89c12afe95</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1c6aec651b556010e33e7596cc4bcb27"/>
+    <sys_element_mapping action="delete_multiple" query="id=1c6aec651b556010e33e7596cc4bcb27"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>1c6aec651b556010e33e7596cc4bcb27</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:35:18</sys_created_on>
+        <sys_id>d06aec651b556010e33e7596cc4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:35:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Bring all data to datapoint">4a390d381b152010e33e7596cc4bcb6a</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>4a390d381b152010e33e7596cc4bcb6a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">88a7c5b41b152010e33e7596cc4bcb82</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:13:49</sys_created_on>
+        <sys_id>357568211b556010e33e7596cc4bcbde</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <ui_id>8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=357568211b556010e33e7596cc4bcbde"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">88a7c5b41b152010e33e7596cc4bcb82</flow>
+        <order>3</order>
+        <parent_ui_id>676236b8-3404-4cb2-bc77-1d89c12afe95</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:45:54</sys_created_on>
+        <sys_id>ffcc28291b556010e33e7596cc4bcb56</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <ui_id>5cfdd040-b33f-42fc-9388-68d8d421af4b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ffcc28291b556010e33e7596cc4bcb56"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ffcc28291b556010e33e7596cc4bcb56</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:45:54</sys_created_on>
+        <sys_id>3bcc28291b556010e33e7596cc4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:45:54</sys_updated_on>
+        <value>x_70281_covid_trac_data_points</value>
+        <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ffcc28291b556010e33e7596cc4bcb56"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>ffcc28291b556010e33e7596cc4bcb56</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:45:54</sys_created_on>
+        <sys_id>f3cc28291b556010e33e7596cc4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:45:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>country={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.region.name}}^confirmed={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.confirmed}}^death={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.deaths}}^recovered={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.recovered}}^coalesce_fields=country</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ffcc28291b556010e33e7596cc4bcb56</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:45:54</sys_created_on>
+        <sys_id>b7cc28291b556010e33e7596cc4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:45:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=88a7c5b41b152010e33e7596cc4bcb82^sys_idNOT IN59767c611b956010e33e7596cc4bcbd1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">88a7c5b41b152010e33e7596cc4bcb82</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 02:28:04</sys_created_on>
+        <sys_id>59767c611b956010e33e7596cc4bcbd1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=59767c611b956010e33e7596cc4bcbd1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>59767c611b956010e33e7596cc4bcbd1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 02:28:04</sys_created_on>
+        <sys_id>19767c611b956010e33e7596cc4bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:04</sys_updated_on>
+        <value>1970-01-01 22:00:00</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=88a7c5b41b152010e33e7596cc4bcb82^sys_idNOT IN88a7c5b41b152010e33e7596cc4bcb84"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>88a7c5b41b152010e33e7596cc4bcb82</id>
+        <name>Pull Data from REST Endpoint</name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-22 19:47:37</sys_created_on>
+        <sys_id>88a7c5b41b152010e33e7596cc4bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-22 19:47:37</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=88a7c5b41b152010e33e7596cc4bcb82^sys_idNOT IN357568211b556010e33e7596cc4bcbde,ffcc28291b556010e33e7596cc4bcb56"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Bring all data to datapoint">4a390d381b152010e33e7596cc4bcb6a</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>4a390d381b152010e33e7596cc4bcb6a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">88a7c5b41b152010e33e7596cc4bcb82</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:13:49</sys_created_on>
+        <sys_id>357568211b556010e33e7596cc4bcbde</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <ui_id>8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=357568211b556010e33e7596cc4bcbde"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">88a7c5b41b152010e33e7596cc4bcb82</flow>
+        <order>3</order>
+        <parent_ui_id>676236b8-3404-4cb2-bc77-1d89c12afe95</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:45:54</sys_created_on>
+        <sys_id>ffcc28291b556010e33e7596cc4bcb56</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <ui_id>5cfdd040-b33f-42fc-9388-68d8d421af4b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ffcc28291b556010e33e7596cc4bcb56"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ffcc28291b556010e33e7596cc4bcb56</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:45:54</sys_created_on>
+        <sys_id>3bcc28291b556010e33e7596cc4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:45:54</sys_updated_on>
+        <value>x_70281_covid_trac_data_points</value>
+        <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ffcc28291b556010e33e7596cc4bcb56"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>ffcc28291b556010e33e7596cc4bcb56</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:45:54</sys_created_on>
+        <sys_id>f3cc28291b556010e33e7596cc4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:45:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>country={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.region.name}}^confirmed={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.confirmed}}^death={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.deaths}}^recovered={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.recovered}}^coalesce_fields=country</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ffcc28291b556010e33e7596cc4bcb56</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:45:54</sys_created_on>
+        <sys_id>b7cc28291b556010e33e7596cc4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:45:54</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=88a7c5b41b152010e33e7596cc4bcb82^sys_idNOT IN1c6aec651b556010e33e7596cc4bcb27"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">106aec651b556010e33e7596cc4bcb27</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Pull Data from REST Endpoint">88a7c5b41b152010e33e7596cc4bcb82</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:35:18</sys_created_on>
+        <sys_id>1c6aec651b556010e33e7596cc4bcb27</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <ui_id>676236b8-3404-4cb2-bc77-1d89c12afe95</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1c6aec651b556010e33e7596cc4bcb27"/>
+    <sys_element_mapping action="delete_multiple" query="id=1c6aec651b556010e33e7596cc4bcb27"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>1c6aec651b556010e33e7596cc4bcb27</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:35:18</sys_created_on>
+        <sys_id>d06aec651b556010e33e7596cc4bcb2b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:35:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703.variable}}</value>
+    </sys_element_mapping>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=88a7c5b41b152010e33e7596cc4bcb82^sys_idNOT IN187424ed1b156010e33e7596cc4bcbdf"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"187424ed1b156010e33e7596cc4bcbdf","name":"plan"}}</plan>
+        <plan_id>88a7c5b41b152010e33e7596cc4bcb82</plan_id>
+        <snapshot>bf6424ed1b156010e33e7596cc4bcb8f</snapshot>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:09:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>187424ed1b156010e33e7596cc4bcbdf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <trigger display_value="">c87424ed1b156010e33e7596cc4bcbdc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>pull_data_from_rest_endpoint</internal_name>
+        <label_cache>[{"name":"76024511-d756-4f35-b68a-ae56f1328a2e.table_name","label":"3➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"76024511-d756-4f35-b68a-ae56f1328a2e.record","label":"3➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8ab0f1f8-3829-42be-8317-ff1fcbded654.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"8ab0f1f8-3829-42be-8317-ff1fcbded654.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"8ab0f1f8-3829-42be-8317-ff1fcbded654.table_name","label":"3➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"8ab0f1f8-3829-42be-8317-ff1fcbded654.record","label":"3➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item","label":"2➛data_object","reference_display":"data_object","type":"object","base_type":"object","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703.variable","label":"1➛variable","reference_display":"variable","type":"array.object","base_type":"array.object","attributes":{"sourceId":"cd65f347-1e8d-4d23-8f00-fe8821df1042","child_name":"data_object","uiUniqueId":"22907170-b4c8-47b4-8b90-901d4daddc8b","uiTypeLabel":"Array.Object","co_type_name":"FD13c964652a5560105ccfa391a486916d","child_label":"data_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"41c07478-9092-4d9e-8522-55511abd4f2b","uiType":"array.object","child_type":"object","child_uiUniqueId":"316bb8b2-cab6-437e-9d5b-5b3d425f6ee7"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record.recovered","label":"2➛Data Points Record➛Recovered","reference":"","reference_display":"Recovered","type":"string","base_type":"string","parent_table_name":"x_70281_covid_trac_data_points","column_name":"recovered"},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record.death","label":"2➛Data Points Record➛Death","reference":"","reference_display":"Death","type":"string","base_type":"string","parent_table_name":"x_70281_covid_trac_data_points","column_name":"death"},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record.confirmed","label":"2➛Data Points Record➛Confirmed","reference":"","reference_display":"Confirmed","type":"string","base_type":"string","parent_table_name":"x_70281_covid_trac_data_points","column_name":"confirmed"},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record.country","label":"2➛Data Points Record➛Country","reference":"","reference_display":"Country","type":"string","base_type":"string","parent_table_name":"x_70281_covid_trac_data_points","column_name":"country"},{"name":"152c6d31-5a39-4262-86e9-f9501ce53faf.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"152c6d31-5a39-4262-86e9-f9501ce53faf.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.table_name","label":"2➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"e84f3a16-efb2-4099-a478-0b82359c0d09.record","label":"2➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f40b87e2-fb4c-4773-9370-59a26cade653.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"document_id"}},{"name":"f40b87e2-fb4c-4773-9370-59a26cade653.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"table_name"}},{"name":"f40b87e2-fb4c-4773-9370-59a26cade653.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice"}},{"name":"f40b87e2-fb4c-4773-9370-59a26cade653.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string"}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result","label":"1➛Result","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"03c09d13-76fb-4924-81ca-94cb04966ed8"}},{"name":"aa7cd88c-1775-4e4a-bd90-6c4ca9ec3fc0.record","label":"2➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa7cd88c-1775-4e4a-bd90-6c4ca9ec3fc0.table_name","label":"2➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa7cd88c-1775-4e4a-bd90-6c4ca9ec3fc0.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"aa7cd88c-1775-4e4a-bd90-6c4ca9ec3fc0.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result.data.data_object.region.name","label":"1➛Action Output➛data➛data_object➛region➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result.data.data_object.confirmed","label":"1➛Action Output➛data➛data_object➛confirmed","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result.data.data_object.deaths","label":"1➛Action Output➛data➛data_object➛deaths","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"7ec65798-4b76-4f3a-9c96-14d076535305.result.data.data_object.recovered","label":"1➛Action Output➛data➛data_object➛recovered","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"579c3e6c-aefd-49f7-9798-7010defa1772.record","label":"2➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"579c3e6c-aefd-49f7-9798-7010defa1772.table_name","label":"2➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Run Once_1.run_start_time","label":"Trigger➛Run Start Time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"test_input_hidden":"true"}},{"name":"1604098e-b146-472c-abec-1b67f25a83d4.record","label":"2➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1604098e-b146-472c-abec-1b67f25a83d4.table_name","label":"2➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1604098e-b146-472c-abec-1b67f25a83d4.status","label":"2➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"1604098e-b146-472c-abec-1b67f25a83d4.error_message","label":"2➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703.result","label":"1➛Result","reference_display":"Result","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"03c09d13-76fb-4924-81ca-94cb04966ed8"}},{"name":"928b5a31-5140-45fd-8244-dfc1d6f4d09c.record","label":"3➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"928b5a31-5140-45fd-8244-dfc1d6f4d09c.table_name","label":"3➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item.region.name","label":"2➛data_object➛region➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item.confirmed","label":"2➛data_object➛confirmed","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item.deaths","label":"2➛data_object➛deaths","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"676236b8-3404-4cb2-bc77-1d89c12afe95.item.recovered","label":"2➛data_object➛recovered","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"5cfdd040-b33f-42fc-9388-68d8d421af4b.record","label":"3➛Data Points Record","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"reference","base_type":"reference","attributes":{"uiType":"document_id","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5cfdd040-b33f-42fc-9388-68d8d421af4b.table_name","label":"3➛Data Points Table","reference":"x_70281_covid_trac_data_points","reference_display":"Data Points","type":"table_name","base_type":"table_name","attributes":{"uiType":"table_name","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5cfdd040-b33f-42fc-9388-68d8d421af4b.status","label":"3➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5cfdd040-b33f-42fc-9388-68d8d421af4b.error_message","label":"3➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Pull Data from REST Endpoint</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Pull Data from REST Endpoint">88a7c5b41b152010e33e7596cc4bcb82</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:09:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bf6424ed1b156010e33e7596cc4bcb8f</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:13</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=bf6424ed1b156010e33e7596cc4bcb8f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bf6424ed1b156010e33e7596cc4bcb8f"/>
+    <sys_hub_flow_component action="delete_multiple" query="flow=bf6424ed1b156010e33e7596cc4bcb8f^sys_idNOT IN11ece8291b556010e33e7596cc4bcb81,7c956c211b556010e33e7596cc4bcb67,942be8a51b556010e33e7596cc4bcbb7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">bf6424ed1b156010e33e7596cc4bcb8f</flow>
+        <order>3</order>
+        <parent_ui_id>676236b8-3404-4cb2-bc77-1d89c12afe95</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:46:18</sys_created_on>
+        <sys_id>11ece8291b556010e33e7596cc4bcb81</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:13</sys_updated_on>
+        <ui_id>5cfdd040-b33f-42fc-9388-68d8d421af4b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11ece8291b556010e33e7596cc4bcb81"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>11ece8291b556010e33e7596cc4bcb81</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:46:18</sys_created_on>
+        <sys_id>15ece8291b556010e33e7596cc4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:46:18</sys_updated_on>
+        <value>x_70281_covid_trac_data_points</value>
+        <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=11ece8291b556010e33e7596cc4bcb81"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>11ece8291b556010e33e7596cc4bcb81</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:46:18</sys_created_on>
+        <sys_id>ddece8291b556010e33e7596cc4bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:46:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>country={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.region.name}}^confirmed={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.confirmed}}^death={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.deaths}}^recovered={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.recovered}}^coalesce_fields=country</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>11ece8291b556010e33e7596cc4bcb81</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:46:18</sys_created_on>
+        <sys_id>91ece8291b556010e33e7596cc4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:46:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Bring all data to datapoint">4a390d381b152010e33e7596cc4bcb6a</action_type>
+        <action_type_parent display_value="Bring all data to datapoint">44f95c7c1b512010e33e7596cc4bcbc1</action_type_parent>
+        <comment/>
+        <compiled_snapshot>4a390d381b152010e33e7596cc4bcb6a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">bf6424ed1b156010e33e7596cc4bcb8f</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:14:19</sys_created_on>
+        <sys_id>7c956c211b556010e33e7596cc4bcb67</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:12</sys_updated_on>
+        <ui_id>8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c956c211b556010e33e7596cc4bcb67"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">106aec651b556010e33e7596cc4bcb27</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Pull Data from REST Endpoint">bf6424ed1b156010e33e7596cc4bcb8f</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:38:35</sys_created_on>
+        <sys_id>942be8a51b556010e33e7596cc4bcbb7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:13</sys_updated_on>
+        <ui_id>676236b8-3404-4cb2-bc77-1d89c12afe95</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=942be8a51b556010e33e7596cc4bcbb7"/>
+    <sys_element_mapping action="delete_multiple" query="id=942be8a51b556010e33e7596cc4bcbb7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>942be8a51b556010e33e7596cc4bcbb7</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:38:35</sys_created_on>
+        <sys_id>182be8a51b556010e33e7596cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:38:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703.variable}}</value>
+    </sys_element_mapping>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=bf6424ed1b156010e33e7596cc4bcb8f^sys_idNOT IN047424ed1b156010e33e7596cc4bcba2"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">bf6424ed1b156010e33e7596cc4bcb8f</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:09:20</sys_created_on>
+        <sys_id>047424ed1b156010e33e7596cc4bcba2</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:14</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=047424ed1b156010e33e7596cc4bcba2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>047424ed1b156010e33e7596cc4bcba2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:09:20</sys_created_on>
+        <sys_id>887424ed1b156010e33e7596cc4bcba2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:22:52</sys_updated_on>
+        <value>2020-12-24 21:25:00</value>
+        <variable display_value="">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>047424ed1b156010e33e7596cc4bcba2</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 02:28:12</sys_created_on>
+        <sys_id>df76fc611b956010e33e7596cc4bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:12</sys_updated_on>
+        <value>1970-01-01 22:00:00</value>
+        <variable display_value="">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=bf6424ed1b156010e33e7596cc4bcb8f^sys_idNOT INff6424ed1b156010e33e7596cc4bcb90"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>bf6424ed1b156010e33e7596cc4bcb8f</id>
+        <name>Pull Data from REST Endpoint</name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:09:20</sys_created_on>
+        <sys_id>ff6424ed1b156010e33e7596cc4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:09:20</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=bf6424ed1b156010e33e7596cc4bcb8f^sys_idNOT IN11ece8291b556010e33e7596cc4bcb81,7c956c211b556010e33e7596cc4bcb67"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create or Update Record">ab575ae253b3230034c6ddeeff7b12f1</action_type>
+        <action_type_parent display_value="Create or Update Record">e057d2e253b3230034c6ddeeff7b1261</action_type_parent>
+        <comment/>
+        <compiled_snapshot>ab575ae253b3230034c6ddeeff7b12f1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">bf6424ed1b156010e33e7596cc4bcb8f</flow>
+        <order>3</order>
+        <parent_ui_id>676236b8-3404-4cb2-bc77-1d89c12afe95</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:46:18</sys_created_on>
+        <sys_id>11ece8291b556010e33e7596cc4bcb81</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:13</sys_updated_on>
+        <ui_id>5cfdd040-b33f-42fc-9388-68d8d421af4b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=11ece8291b556010e33e7596cc4bcb81"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>11ece8291b556010e33e7596cc4bcb81</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:46:18</sys_created_on>
+        <sys_id>15ece8291b556010e33e7596cc4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:46:18</sys_updated_on>
+        <value>x_70281_covid_trac_data_points</value>
+        <variable display_value="">27575ae253b3230034c6ddeeff7b12f4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=11ece8291b556010e33e7596cc4bcb81"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>fields</field>
+        <id>11ece8291b556010e33e7596cc4bcb81</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:46:18</sys_created_on>
+        <sys_id>ddece8291b556010e33e7596cc4bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:46:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value>country={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.region.name}}^confirmed={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.confirmed}}^death={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.deaths}}^recovered={{676236b8-3404-4cb2-bc77-1d89c12afe95.item.recovered}}^coalesce_fields=country</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>11ece8291b556010e33e7596cc4bcb81</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:46:18</sys_created_on>
+        <sys_id>91ece8291b556010e33e7596cc4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:46:18</sys_updated_on>
+        <table>var__m_sys_hub_action_input_ab575ae253b3230034c6ddeeff7b12f1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Bring all data to datapoint">4a390d381b152010e33e7596cc4bcb6a</action_type>
+        <action_type_parent display_value="Bring all data to datapoint">44f95c7c1b512010e33e7596cc4bcbc1</action_type_parent>
+        <comment/>
+        <compiled_snapshot>4a390d381b152010e33e7596cc4bcb6a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Pull Data from REST Endpoint">bf6424ed1b156010e33e7596cc4bcb8f</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:14:19</sys_created_on>
+        <sys_id>7c956c211b556010e33e7596cc4bcb67</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:12</sys_updated_on>
+        <ui_id>8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7c956c211b556010e33e7596cc4bcb67"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=bf6424ed1b156010e33e7596cc4bcb8f^sys_idNOT IN942be8a51b556010e33e7596cc4bcbb7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">106aec651b556010e33e7596cc4bcb27</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Pull Data from REST Endpoint">bf6424ed1b156010e33e7596cc4bcb8f</flow>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:38:35</sys_created_on>
+        <sys_id>942be8a51b556010e33e7596cc4bcbb7</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 02:28:13</sys_updated_on>
+        <ui_id>676236b8-3404-4cb2-bc77-1d89c12afe95</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=942be8a51b556010e33e7596cc4bcbb7"/>
+    <sys_element_mapping action="delete_multiple" query="id=942be8a51b556010e33e7596cc4bcbb7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>942be8a51b556010e33e7596cc4bcbb7</id>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-25 01:38:35</sys_created_on>
+        <sys_id>182be8a51b556010e33e7596cc4bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-25 01:38:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{8e92d2fa-0ce9-4c2a-84d3-cc8ce67ad703.variable}}</value>
+    </sys_element_mapping>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="Number of Deaths" max_length="40" name="x_70281_covid_trac_number_of_deaths" sizeclass="118" type="collection">
+        <element label="Country New " mandatory="true" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date"/>
+        <element label="Death Case" max_length="40" name="death_case" read_only="true" type="integer"/>
+        <element label="Recovered Case" max_length="40" name="recovered_case" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Response Body" max_length="255" name="response_body" read_only="true" type="string_full_utf8"/>
+        <element choice="1" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="death" sequence="2" value="death"/>
+                <element inactive_on_update="false" label="recovered" sequence="3" value="recovered"/>
+            </choice>
+        </element>
+        <element label="HTTP Status Code" max_length="40" name="status_code" read_only="true" type="integer"/>
+        <element label="Confirmed" max_length="40" name="total_number" read_only="true" type="integer"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_70281_covid_trac_number_of_deaths</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Populate Response from RapidAPI</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+	
+	try {
+        var r = new sn_ws.RESTMessageV2('x_70281_covid_trac.Covid19 API', 'GET Request');
+        r.setStringParameterNoEscape('status', current.status);
+			
+		if(current.country.getDisplayValue() == 'United States of America'){
+				r.setStringParameterNoEscape('country', current.country.iso3166_2.getDisplayValue());
+			} else
+			{
+			r.setStringParameterNoEscape('country', current.country.getDisplayValue());
+			}
+       
+        //override authentication profile 
+        //authentication type ='basic'/ 'oauth2'
+        //r.setAuthenticationProfile(authentication type, profile name);
+
+        //set a MID server name if one wants to run the message on MID
+        //r.setMIDServer('MY_MID_SERVER');
+
+        //if the message is configured to communicate through ECC queue, either
+        //by setting a MID server or calling executeAsync, one needs to set skip_sensor
+        //to true. Otherwise, one may get an intermittent error that the response body is null
+        //r.setEccParameter('skip_sensor', true);
+
+        var response = r.execute();
+		var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+				
+		gs.info(responseBody);
+		
+ 		current.status_code = httpStatus;
+ 		current.response_body = responseBody;
+		
+		var i = JSON.stringify(responseBody);
+		gs.info(i[0].confirmed);
+
+			
+// 		var apple = JSON.parse(responseBody);
+// 		if (apple.confirmed){
+// 			apple.confirmed = current.total_number;
+// 		}
+		
+				
+// 		var i = JSON.stringify(current.responseBody);
+// 		var j = new JSONParser();
+// 		var k = parser.parse(i);
+// 		var r = k.confirmed;
+// 		gs.log(r);
+	
+		//current.total_number = strBody;
+		
+	   // gs.info("Confirmed = "+ current.total_number);
+		
+		current.update();
+		
+		
+    } catch (ex) {
+        var message = ex.message;
+    }
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-11-24 21:54:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7df71dbf1b2c2010e33e7596cc4bcbb3</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_name>Populate Response from RapidAPI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_update_name>sys_script_7df71dbf1b2c2010e33e7596cc4bcbb3</sys_update_name>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-14 19:53:58</sys_updated_on>
+        <template/>
+        <when>async</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=7df71dbf1b2c2010e33e7596cc4bcbb3"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</application>
+        <file_path/>
+        <instance_id>27be7cb1db2f53401ddcf22ebf961973</instance_id>
+        <instance_name>dev67408</instance_name>
+        <name>sys_script_7df71dbf1b2c2010e33e7596cc4bcbb3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_70281_covid_trac_number_of_deaths&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Populate Response from RapidAPI&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+	
+	try {
+        var r = new sn_ws.RESTMessageV2('x_70281_covid_trac.Covid19 API', 'GET Request');
+        r.setStringParameterNoEscape('status', current.status);
+			
+		if(current.country.getDisplayValue() == 'United States of America'){
+				r.setStringParameterNoEscape('country', current.country.iso3166_2.getDisplayValue());
+			} else
+			{
+			r.setStringParameterNoEscape('country', current.country.getDisplayValue());
+			}
+       
+        //override authentication profile 
+        //authentication type ='basic'/ 'oauth2'
+        //r.setAuthenticationProfile(authentication type, profile name);
+
+        //set a MID server name if one wants to run the message on MID
+        //r.setMIDServer('MY_MID_SERVER');
+
+        //if the message is configured to communicate through ECC queue, either
+        //by setting a MID server or calling executeAsync, one needs to set skip_sensor
+        //to true. Otherwise, one may get an intermittent error that the response body is null
+        //r.setEccParameter('skip_sensor', true);
+
+        var response = r.execute();
+		var responseBody = response.getBody();
+        var httpStatus = response.getStatusCode();
+				
+		gs.info(responseBody);
+		
+ 		current.status_code = httpStatus;
+ 		current.response_body = responseBody;
+		
+		var i = JSON.stringify(responseBody);
+		gs.info(i[0].confirmed);
+
+			
+// 		var apple = JSON.parse(responseBody);
+// 		if (apple.confirmed){
+// 			apple.confirmed = current.total_number;
+// 		}
+		
+				
+// 		var i = JSON.stringify(current.responseBody);
+// 		var j = new JSONParser();
+// 		var k = parser.parse(i);
+// 		var r = k.confirmed;
+// 		gs.log(r);
+	
+		//current.total_number = strBody;
+		
+	   // gs.info("Confirmed = "+ current.total_number);
+		
+		current.update();
+		
+		
+    } catch (ex) {
+        var message = ex.message;
+    }
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;niamul.arifin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-24 21:54:16&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;7df71dbf1b2c2010e33e7596cc4bcbb3&lt;/sys_id&gt;&lt;sys_mod_count&gt;60&lt;/sys_mod_count&gt;&lt;sys_name&gt;Populate Response from RapidAPI&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="CoVID Tracker" source="x_70281_covid_trac"&gt;d7c681ff1be82010e33e7596cc4bcb7a&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CoVID Tracker"&gt;d7c681ff1be82010e33e7596cc4bcb7a&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_7df71dbf1b2c2010e33e7596cc4bcbb3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;niamul.arifin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-12-14 19:53:58&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;async&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=7df71dbf1b2c2010e33e7596cc4bcbb3"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1283326966</payload_hash>
+        <record_name>Populate Response from RapidAPI</record_name>
+        <reverted_from/>
+        <source>5fc681ff1be82010e33e7596cc4bcb7c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-14 19:53:58</sys_created_on>
+        <sys_id>f25c7b821bcd6010e33e7596cc4bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17662d115970000001</sys_recorded_at>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-14 19:53:58</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>fa5c7b822fcd6010a71c6059ae4d6498</update_guid>
+        <update_guid_history>fa5c7b822fcd6010a71c6059ae4d6498:1283326966,368bbfce098d6010cd0fd11180093ae8:1539491771,3b26734e3b8d60108eef0b9310f88e6b:-1820317483,d1f57f0eee8d60108a528c852f4b23df:1406271315,a065ffca228d60108c4f0fbd45a2a316:-505790911,cc05bfcaf68d60103c87292f8b0056b4:695543976,7964b7caea8d601097f446acd69d8542:-2135700997,b5972702128d60107784e593f888be3e:1835821539,0c57afcef24d6010457fd5b8d8bdb03e:-1516110899,e937afce1d4d601043b857e31e886237:1461905547,0ee66bceb24d601004290f3f95c77875:-2131741537,4dafe269fc012010d8ce019624a37ab9:135087824,41ab0e409d7c6010abc8a44250c984ab:322683368,dbca8240bf7c601030881d3502bd3333:1757636014,e35a0a00b87c60104a23911ba14a6afb:-1978925657,e00a8600bd7c601042ab54f83bac9ab1:1026642610,39b306c8f63c6010707357fe2f433300:-1826918052,9e834e881a3c60100fcfeb580ed05ecb:-341658208,2623ca88c13c601063aeafe595df68be:328787347,71420a48f13c601052566e1cc59dbe46:-1620518736,cac1c6485e3c6010d90942dd07b3cfd1:621985013,b9318a08803c6010dbe06601c963b99e:196382541,d1d006c4f63c60106b9edbdd2414ad60:-1617847629,b99bf9c0fe3c60106c884606df7ea3b6:1429101736,774b7d807d3c60104d26afec5416c31a:-1516364434,37e9b940653c6010fdf844f2d9579427:105897471,c589f500253c6010da8bd295432ffcb4:-1646836809,e9a8f500673c601094d7a6dd69e369d5:105897471,30b7f54ce1f86010df7d3216de8e417f:1664009305,bad5398cacf860102d717493860eac95:-2039317434,8834ed8c3ab8601078e8e93e2279adf2:-98086859,3d636d8c71b860108bd1d246a156bf8b:-1473149547,6a42a50cefb86010dc61f5acc37974f4:63444899,60a0a50ceeb86010d730e931fde8fdea:-701109392,0c9d1d48b1b86010588b1036589bf9f0:63444899,33ebd5c469b860109c1442b3a1f46af5:-1067442851,be8a5184f2b86010d78d90c8748c31d4:-942850672,25d81544afb8601053fb9b8b5516f022:-1067442851,8748d50407b860105ea5aba6c980bddb:177115482,8528d904ecb8601022110cf072a308e5:-75802472,39d7d10425b86010f2566a575cd32fcd:-942850672,bd36d580d9b86010bd0ab238707eb7fa:-354673854,a8859580ebb8601006e1e9047ca7a9f8:2130181816,6539c1c43b78601059ba1f70a17190ba:549997696,73a8c5842e786010bf69c025b7aee780:1229591664,5c554d804f78601083b10b81419728d2:378911192,10738d40ba78601058a33ee076d6aa5b:-454445072,6d82c9405e786010e1bf224a5d71c3b6:-110539463,802bf6339aa06010d5a590817fbc7965:628178328,8b0ab6ff0a6060109e49ae7913b3d027:-909648170,c38972fffb606010c28879fcf4c20461:1234804255,0c49fe7fd3606010def80612d830a12d:-361291560,1648327f506060104952cd8fb93a05b5:-293836837,925fdd77d96c201069a293c89814f357:-1091949194,e4ac19f3426c2010224b65377b953290:156204332,6c3cddb3f26c201035bd390f3404ac33:-219488142,fb3a1573196c2010682b160e90de4109:-763652580,2c1a5133ed6c20106c897788e1559665:533243029,0ba85dffb12c20105ffa4bcae2136b87:1084930572,a72895fff22c2010acfb4de1d8aa060f:-1572486608,ca189dbf6e2c2010560a3b24229e1e66:-295370977</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>niamul.arifin</sys_created_by>
+        <sys_created_on>2020-12-14 19:57:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>6127f868def94070a9feb3026eec6240</sys_id>
+        <sys_metadata>7df71dbf1b2c2010e33e7596cc4bcbb3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Populate Response from RapidAPI</sys_name>
+        <sys_package display_value="CoVID Tracker" source="x_70281_covid_trac">d7c681ff1be82010e33e7596cc4bcb7a</sys_package>
+        <sys_parent display_value="Number of Deaths">47d7cd331b2c2010e33e7596cc4bcb41</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="CoVID Tracker">d7c681ff1be82010e33e7596cc4bcb7a</sys_scope>
+        <sys_scope_delete display_value="">1ee6a7dd96c341ce990215f6e2b71b24</sys_scope_delete>
+        <sys_update_name>sys_script_7df71dbf1b2c2010e33e7596cc4bcbb3</sys_update_name>
+        <sys_update_version display_value="sys_script_7df71dbf1b2c2010e33e7596cc4bcbb3">f25c7b821bcd6010e33e7596cc4bcb99</sys_update_version>
+        <sys_updated_by>niamul.arifin</sys_updated_by>
+        <sys_updated_on>2020-12-14 19:57:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
